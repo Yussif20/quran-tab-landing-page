@@ -96,4 +96,8 @@ a {
 }
 .links__link:hover {
   color: var(--color-soft-red);
+}
+
+.section__image {
+  max-width: 100%;
 }/*# sourceMappingURL=style.css.map */
