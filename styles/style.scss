@@ -59,15 +59,16 @@ a {
 }
 
 /* End CSS Reset */
-// General Styles start
+// Global Styles start
 .container {
   max-width: var(--desktop-width);
   margin: 0 auto;
   padding: 0 var(--default-padding);
   display: flex;
   flex-direction: column;
+  gap: calc(var(--default-padding) * 4);
 }
-// General Styles End
+// Global Styles End
 // Header Start
 .header {
   display: flex;
@@ -100,7 +101,50 @@ a {
 
 // Header End
 .section {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--default-padding) * 2);
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  &:nth-of-type(1) &__title {
+    font-size: 4.2rem;
+  }
+  &__description {
+    font-size: 1.4rem;
+    color: var(--color-grayish-blue);
+  }
+  &__buttons {
+    display: flex;
+    gap: var(--default-padding);
+    margin-top: var(--default-padding);
+  }
+  &__imageContent {
+    display: flex;
+    flex: 1;
+  }
   &__image {
     max-width: 100%;
+  }
+}
+.button {
+  background-color: var(--color-soft-blue);
+  color: var(--color-off-white);
+  padding: 1.2rem 2.4rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+  box-shadow: 0 0.4rem 0.8rem 0.2rem rgba(0, 0, 0, 0.1);
+  border-radius: var(--default-radius);
+  transition: background-color var(--timing-animation) ease-in-out;
+  &--secondary {
+    background-color: var(--color-off-white);
+    color: var(--color-very-dark-blue);
+  }
+  &:hover {
+    background-color: var(--color-soft-red);
   }
 }
