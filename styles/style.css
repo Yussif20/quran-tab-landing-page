@@ -224,9 +224,18 @@ a {
   max-width: 100%;
   right: 0;
   top: calc(var(--default-padding) + 0.6);
+  transition: transform var(--timing-animation);
 }
 .faq__input {
   display: none;
+}
+.faq__input:checked ~ .faq__answer {
+  max-height: 30rem;
+  padding-top: var(--default-padding);
+  opacity: 1;
+}
+.faq__input:checked ~ .faq__arrow {
+  transform: rotate(180deg);
 }
 .faq__question {
   font-size: 1.6rem;
@@ -237,4 +246,8 @@ a {
 .faq__answer {
   font-size: 1.4rem;
   font-weight: 400;
+  opacity: 0;
+  transition: all var(--timing-animation);
+  max-height: 0.1rem;
+  overflow: hidden;
 }/*# sourceMappingURL=style.css.map */
