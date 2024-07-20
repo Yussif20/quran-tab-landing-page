@@ -15,7 +15,7 @@ This project is a simple landing page for the Quran Tab browser extension. It wa
 
 ![Quran Tab Landing Page](./images/QT%20landing%20page.png)
 
-You can view the live version of the project [here](yussif20.github.io/quran-tab-landing-page).
+You can view the live version of the project [here](https://yussif20.github.io/quran-tab-landing-page/).
 
 ## Features
 
