@@ -68,6 +68,9 @@ a {
   display: flex;
   flex-direction: column;
   gap: calc(var(--default-padding) * 4);
+  @media (max-width: 600px) {
+    gap: calc(var(--default-padding) * 2);
+  }
 }
 // Global Styles End
 // Header Start
@@ -76,6 +79,9 @@ a {
   align-items: center;
   justify-content: space-between;
   margin-top: var(--default-padding);
+  @media (max-width: 600px) {
+    font-size: 1.4rem;
+  }
 }
 .logoContent {
   display: flex;
@@ -98,6 +104,9 @@ a {
       color: var(--color-soft-red);
     }
   }
+  @media (max-width: 600px) {
+    gap: calc(var(--default-padding) / 2);
+  }
 }
 
 // Header End
@@ -105,6 +114,12 @@ a {
   display: flex;
   align-items: center;
   gap: calc(var(--default-padding) * 2);
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    gap: var(--default-padding);
+  }
+
   &--one-column {
     flex-direction: column;
     gap: calc(var(--default-padding) * 2);
@@ -133,9 +148,18 @@ a {
     gap: var(--default-padding);
     margin-top: var(--default-padding);
   }
+  &__button:not(.card__button) {
+    @media (max-width: 600px) {
+      flex: 1;
+      text-align: center;
+    }
+  }
   &__imageContent {
     display: flex;
     flex: 1;
+    @media (max-width: 600px) {
+      order: -1;
+    }
   }
   &__image {
     max-width: 100%;
@@ -169,6 +193,9 @@ a {
   gap: var(--default-padding);
   width: 100%;
   margin-top: calc(var(--default-padding) * 2);
+  @media (max-width: 600px) {
+    flex-wrap: wrap;
+  }
 }
 .card {
   display: flex;
@@ -181,6 +208,10 @@ a {
   width: 25rem;
   height: 26rem;
   padding: calc(var(--default-padding) * 2) var(--default-padding);
+
+  @media (max-width: 600px) {
+    width: 100%;
+  }
 
   &__image {
     width: 6rem;
@@ -264,6 +295,11 @@ a {
   color: #fff;
   padding: var(--default-padding);
   font-size: 1.4;
+  @media (max-width: 600px) {
+    flex-direction: column;
+    gap: calc(var(--default-padding) / 2);
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -273,6 +309,10 @@ a {
     z-index: -1;
   }
   &__left {
-    margin: 0 auto;
+    margin-right: auto;
+
+    @media (max-width: 600px) {
+      margin-right: 0;
+    }
   }
 }
