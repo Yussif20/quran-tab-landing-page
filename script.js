@@ -1,10 +1,7 @@
-const labelElements = document.querySelectorAll(".faq__question");
+import {labelElementsHandler , observeElements} from "./utils"
 
-labelElements.forEach((el)=>{
-    el.addEventListener("keydown",(e)=>{
-        if(e.key === "Enter"){
-            el.click();
-        }
-        // e.key === "Enter" && el.click();
-    })
-})
+const labelElements = document.querySelectorAll(".faq__question");
+const sectionElements  = document.querySelectorAll(".section")
+
+labelElements.forEach(labelElementsHandler)
+observeElements(sectionElements)

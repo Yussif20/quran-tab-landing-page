@@ -1,0 +1,23 @@
+{
+  "name": "quran-tab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yussif20/quran-tab-landing-page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yussif20/quran-tab-landing-page/issues"
+  },
+  "homepage": "https://github.com/Yussif20/quran-tab-landing-page#readme",
+  "dependencies": {
+    "vite": "^5.4.1"
+  }
+}
